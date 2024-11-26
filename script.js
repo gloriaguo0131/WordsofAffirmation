@@ -9,7 +9,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // Update the background video source for mobile devices
 if (isMobile) {
-    backgroundSource.src = "./mobile.mp4";
+    backgroundSource.src = "mobile.mp4";
     backgroundVideo.load(); // Reload the video with the new source
 }
 
@@ -18,7 +18,7 @@ navigator.mediaDevices.getUserMedia({ video: true })
     .then(stream => {
         video.srcObject = stream;
         statusMessage.style.display = 'none'; // Hide status message
-        video.muted = false;
+        video.muted = true;
         video.play();
     })
     .catch(error => {
