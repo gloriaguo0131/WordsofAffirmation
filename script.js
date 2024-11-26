@@ -10,7 +10,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 // Update the background video source for mobile devices
 if (isMobile) {
     const videoElement = document.getElementById('videoElement');
-    videoElement.style.width = '60vw'; 
+    videoElement.style.width = '70vw'; 
     videoElement.style.height = '20vh';
     backgroundSource.src = "mobile.mp4";
     backgroundVideo.load(); // Reload the video with the new source
