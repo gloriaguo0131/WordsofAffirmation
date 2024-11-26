@@ -25,15 +25,10 @@ body, html {
     z-index: -1; /* Place it behind all content */
 }
 
-/* Camera container */
-.container {
+#videoElement {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#videoElement {
     height: 32vh;
     width: 45vw;
 }
