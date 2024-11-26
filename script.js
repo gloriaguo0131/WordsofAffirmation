@@ -11,7 +11,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
     const videoElement = document.getElementById('videoElement');
     videoElement.style.width = '60vw'; 
-    videoElement.style.height = '30vh';
+    videoElement.style.height = '20vh';
     backgroundSource.src = "mobile.mp4";
     backgroundVideo.load(); // Reload the video with the new source
 }
