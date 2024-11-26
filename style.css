@@ -34,8 +34,8 @@ body, html {
 }
 
 #videoElement {
-    height: 35vh;
-    width: 35vw;
+    height: 32vh;
+    width: 45vw;
 }
 
 #statusMessage {

@@ -8,10 +8,6 @@ const isMobile = window.innerWidth < 1000;
 
 // Update the background video source for smaller screen widths
 if (isMobile) {
-    const videoWidth = window.innerWidth * 0.7; // 70% of screen width
-    const videoHeight = window.innerHeight * 0.2; // 20% of screen height
-    video.style.width = `${videoWidth}px`; 
-    video.style.height = `${videoHeight}px`;
     backgroundSource.src = "mobile.mp4";
     backgroundVideo.load(); // Reload the video with the new source
 }
