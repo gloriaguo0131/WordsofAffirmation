@@ -1,17 +1,15 @@
-
 const video = document.getElementById('videoElement');
 const statusMessage = document.getElementById('statusMessage');
 const backgroundVideo = document.getElementById('background-video');
 const backgroundSource = document.getElementById('background-source');
 
-// Detect if the device is mobile
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// Check if the screen width is less than 1000px, which we consider as mobile
+const isMobile = window.innerWidth < 1000;
 
-// Update the background video source for mobile devices
+// Update the background video source for smaller screen widths
 if (isMobile) {
-    const videoElement = document.getElementById('videoElement');
-    videoElement.style.width = '70vw'; 
-    videoElement.style.height = '20vh';
+    video.style.width = '70vw'; 
+    video.style.height = '20vh';
     backgroundSource.src = "mobile.mp4";
     backgroundVideo.load(); // Reload the video with the new source
 }
